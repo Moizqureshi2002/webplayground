@@ -1,0 +1,123 @@
+/* CSS reset. */
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(187, 187, 245);
+    background: url(gym.jpg);
+    height: auto;
+    width: auto;
+    color: white;
+    font-family: 'Macondo', cursive;
+}
+
+
+
+/* LEFT */
+.left{
+    display:inline-block;
+    /* border: 2px solid red; */
+    position: absolute;
+    left: 34px;
+    top: 20px;
+    
+}
+
+.left img{
+    width: 80px;
+}
+
+.left div{
+    text-align: center;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* MID */
+.mid{
+    /* border: 2px solid greenyellow; */
+    display: block;
+    width:45%;
+    margin: 35px auto;
+    
+}
+
+.navbar{
+    display: inline-block;
+}
+
+.navbar li{
+    display: inline-block;
+    font-size: 20px;
+}
+
+.navbar li a{
+    color: white;
+    padding: 34px 23px;
+    text-decoration: none;
+    
+}
+
+.navbar li a:hover, .navbar li a.active{
+    text-decoration: underline;
+    color: gray;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* RIGhT */
+.right{
+    display:inline-block;
+    right:34px;
+    top:36px;
+    /* border: 2px solid aqua; */
+    position: absolute;
+}
+
+.btn{
+    margin: 7px 9px; 
+    background-color: black;
+    color: white;
+    padding: 7px 14px;
+    border-radius: 10px;
+    font-size: 17px;
+    cursor: pointer;
+    font-family: 'Macondo', cursive;
+
+}
+.btn:hover{
+    background-color: rgb(138, 123, 123);
+    color: rgb(250, 249, 249);
+    text-decoration: underline;
+}
+
+/* --------------------------------------------------------------------------------------- */
+
+.container{
+    border: 2px solid;
+    margin: 100px 50px;
+    padding: 75px;
+    width: 30%;
+    border-radius: 7px;
+}
+
+.form-group input{
+    font-size: 18px;
+    text-align: center;
+    display: block;
+    width: 300px;
+    padding:2px solid black;
+    margin: 12px auto;
+    border-radius: 7px;
+    font-family: 'Macondo', cursive;
+}
+
+.container h1{
+    text-align: center;
+    
+}
+
+.container button{
+    display: block;
+    text-align: center;
+    margin: auto;
+}
