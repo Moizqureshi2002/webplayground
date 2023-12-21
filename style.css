@@ -1,123 +1,528 @@
-/* CSS reset. */
+/* CSS Reset */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
 body{
-    margin: 0px;
-    padding: 0px;
-    background-color: rgb(187, 187, 245);
-    background: url(gym.jpg);
-    height: auto;
-    width: auto;
-    color: white;
-    font-family: 'Macondo', cursive;
+    background-color: black;
+}
+
+/* --------------------------------------------------------------------- */
+
+
+
+/* CSS variables */
+
+:root{
+    --navbar-height: 59px;
 }
 
 
 
-/* LEFT */
-.left{
-    display:inline-block;
-    /* border: 2px solid red; */
+/* --------------------------------------------------------------------- */
+
+
+
+/* Navigation Bar */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+    font-family: 'Dancing Script', cursive;
+position: sticky;
+}
+
+#navbar::before{
+    content:'';
+    background-color: white;
     position: absolute;
-    left: 34px;
-    top: 20px;
-    
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.1;
 }
 
-.left img{
-    width: 80px;
+
+
+/* ----------------------------------------------------------------------- */
+
+
+
+/*Navigation Bar: Logo and images */
+
+#logo{
+    margin: 10px 34px;
 }
 
-.left div{
-    text-align: center;
+#logo img{
+    margin: 3px 5px;
+    height: 56px;
+    border-radius: 17px;
 }
 
-/* ------------------------------------------------------------------------------------------ */
 
-/* MID */
-.mid{
-    /* border: 2px solid greenyellow; */
+
+/* ------------------------------------------------------------------------ */
+
+
+
+/* Navigation Bar: List Styling */
+
+
+#navbar ul{
+    /* position: relative; */
+    /* align-items: center; */
+    display: flex;
+    justify-content: center;
+    /* font-size: 14px; */
+}
+#navbar ul li{
+    display: flex;
+    color: aliceblue;
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
     display: block;
-    width:45%;
-    margin: 35px auto;
-    
-}
-
-.navbar{
-    display: inline-block;
-}
-
-.navbar li{
-    display: inline-block;
-    font-size: 20px;
-}
-
-.navbar li a{
-    color: white;
-    padding: 34px 23px;
+    padding: 3px 22px;
+    border-radius: 20px;
     text-decoration: none;
-    
+    color:white;
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color: azure;
 }
 
-.navbar li a:hover, .navbar li a.active{
-    text-decoration: underline;
-    color: gray;
+
+
+/* ------------------------------------------------------------------------- */
+
+
+
+/* Home Section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 450px;
+    justify-content: center;
+    align-items: center;
+    height: 578px;
 }
 
-/* ------------------------------------------------------------------------------------------ */
-
-/* RIGhT */
-.right{
-    display:inline-block;
-    right:34px;
-    top:36px;
-    /* border: 2px solid aqua; */
+#home::before{
+    content:'';
     position: absolute;
+    background: url(bg1.jpg) no-repeat center center/cover;
+    height: 660px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Edu TAS Beginner', cursive;
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    /* font-size: 1.5rem; */
+    font-size: 25px;
+    font-family: 'Edu TAS Beginner', cursive;
+    padding: 25px;
+}
+
+
+
+/* --------------------------------------------------------------------------------- */
+
+
+
+/* Services Section */
+
+#h-primary{
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+#services{
+    display: flex;
+    margin: 50px;
+    justify-content: center;
+    align-content: center ;
+    align-items: center;
+}
+#services::before{
+    content: '';
+    position: absolute;
+    height: 639.1px;
+    width: 100%;
+    top: 660.1px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#services #box1{
+    height: auto;
+    width: 200px;
+    /* display: flex;
+    justify-content: center;
+    align-content: center ;
+    align-items: center; */
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 23px;
+    background-color: rgb(223, 223, 223);
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.1s;
+    font-size: 18px;
+}
+#services #box2{
+    height: auto;
+    width: 200px;
+    /* display: flex;
+    justify-content: center;
+    align-content: center ;
+    align-items: center; */
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 23px;
+    background-color: rgb(223, 223, 223);
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.1s;
+    font-size: 18px;
+}
+#services #box3{
+    height: auto;
+    width: 200px;
+    /* display: flex;
+    justify-content: center;
+    align-content: center ;
+    align-items: center; */
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 23px;
+    background-color: rgb(223, 223, 223);
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.1s;
+    font-size: 18px;
+}
+
+#services #box1:hover{
+    background-color: rgb(184, 182, 182);
+    height: auto;
+    width: 205px;
+    border-radius: 15px;
+    text-decoration: underline;
+    cursor: pointer;
+} 
+
+#services #box2:hover{
+    background-color: rgb(184, 182, 182);
+    height: auto;
+    width: 205px;
+    border-radius: 15px;
+    text-decoration: underline;
+    cursor: pointer;
+} 
+
+#services #box3:hover{
+    background-color: rgb(184, 182, 182);
+    height: auto;
+    width: 205px;
+    border-radius: 15px;
+    text-decoration: underline;
+    cursor: pointer;
+} 
+
+#services #box1 img{
+    /* height: 180px; */
+    width: 140px;
+    display: block;
+    margin: auto;
+}
+
+#services #box2 img{
+    /* height: 180px; */
+    width: 140px;
+    display: block;
+    margin: auto;
+}
+
+#services #box3 img{
+    /* height: 180px; */
+    width: 140px;
+    display: block;
+    margin: auto;
+}
+
+#services #box1 p{
+    font-family: 'Edu TAS Beginner', cursive;
+
+}
+
+#services #box2 p{
+    font-family: 'Edu TAS Beginner', cursive;
+
+}
+
+#services #box3 p{
+    font-family: 'Edu TAS Beginner', cursive;
+
+}
+
+
+/* --------------------------------------------------------------------------------- */
+
+
+
+/* Client Section  */
+
+#client-section{
+    /* height: 344px; */
+    position: relative;
+    color: white;
+    text-decoration: underline;
+}
+
+#client-section::before{
+    content:'';
+    position: absolute;
+    background: url('bg3.jpg');
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients #img1{
+    height: auto;
+    width: 124px;
+    justify-content: center;
+    align-content: center ;
+    align-items: center; 
+    transition-property: all;
+    transition-duration: 0.3s;
+    /* transition-timing-function: ease-in; */
+    transition-delay: 0s;
+    cursor: pointer;
+}
+#clients #img1:hover{
+    /* height: 160px; */
+    width: 127px;
+    border-radius: 3px;
+}
+
+#clients #img2{
+    height: auto;
+    width: 124px;
+    transition-property: all;
+    transition-duration: 0.3s;
+    /* transition-timing-function: ease-in; */
+    transition-delay: 0s;
+    cursor: pointer;
+}
+#clients #img2:hover{
+    width: 127px;
+    /* height: 160px; */
+    border-radius: 3px;
+}
+
+#clients #img3{
+    height: auto;
+    width: 124px;
+    transition-property: all;
+    transition-duration: 0.3s;
+    /* transition-timing-function: ease-in; */
+    transition-delay: 0s;
+    cursor: pointer;
+}
+#clients #img3:hover{
+    /* height: 160px; */
+    width: 127px;
+    border-radius: 3px;
+}
+
+#clients #img4{
+    height: auto;
+    width: 124px;
+    transition-property: all;
+    transition-duration: 0.3s;
+    /* transition-timing-function: ease-in; */
+    transition-delay: 0s;
+    cursor: pointer;
+}
+#clients #img4:hover{
+    /* height: 160px; */
+    width: 127px;
+    border-radius: 3px;
+}
+
+#clients #img5{
+    height: auto;
+    width: 124px;
+    transition-property: all;
+    transition-duration: 0.3s;
+    /* transition-timing-function: ease-in; */
+    transition-delay: 0s;
+    cursor: pointer;
+}
+#clients #img5:hover{
+    /* height: 160px; */
+    width: 127px;
+    border-radius: 3px;
+}
+
+#client-item{
+    padding:34px;
+}
+
+
+
+/* --------------------------------------------------------------------------------- */
+
+
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(comm.jpg) no-repeat center center/cover;
+}
+
+
+
+/* --------------------------------------------------------------------------------- */
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    color: white;
+}
+
+#contact-box input{
+    width: 104%;
+    border-radius: 4px;
+}
+
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact-box .form-group{
+    width: 88%;
+    padding-left: 10%;
+}
+
+#contact h1{
+    text-decoration: underline;
+    color: white;
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Edu TAS Beginner', cursive;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+
+}
+
+
+
+/* -------------------------------------------------------------------------------- */
+
+
+
+
+/* Utility Classes */
+
+.h-primary{
+    font-size: 2.8rem ;
+    padding: 12px;
+    font-family: 'Dancing Script', cursive;
+
+}
+
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Dancing Script', cursive;
+
 }
 
 .btn{
-    margin: 7px 9px; 
-    background-color: black;
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgb(199, 58, 58);
     color: white;
-    padding: 7px 14px;
+    margin: 17px;
+    font-size: 1.5rem ;
     border-radius: 10px;
-    font-size: 17px;
     cursor: pointer;
-    font-family: 'Macondo', cursive;
-
 }
+
 .btn:hover{
-    background-color: rgb(138, 123, 123);
-    color: rgb(250, 249, 249);
-    text-decoration: underline;
+    color:rgb(199, 58, 58);
+    background-color: white;
+    border: 2px solid rgb(199, 58, 58);
 }
 
-/* --------------------------------------------------------------------------------------- */
-
-.container{
-    border: 2px solid;
-    margin: 100px 50px;
-    padding: 75px;
-    width: 30%;
-    border-radius: 7px;
-}
-
-.form-group input{
-    font-size: 18px;
+.center{
     text-align: center;
-    display: block;
-    width: 300px;
-    padding:2px solid black;
-    margin: 12px auto;
-    border-radius: 7px;
-    font-family: 'Macondo', cursive;
-}
-
-.container h1{
-    text-align: center;
-    
-}
-
-.container button{
-    display: block;
-    text-align: center;
-    margin: auto;
 }

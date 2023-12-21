@@ -3,56 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Gym</title>
+    <title>Miz Food Dilivery. | MizOnlineMeal.com</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media='screen and (max-width: 1170px)' href="phone.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Edu+TAS+Beginner:wght@500&display=swap" rel="stylesheet">
+
 </head>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
 <body>
-    <header class='Header'>
-
-    <!-- left box for logo -->
-        <div class="left">
-            <img src="logo.png" alt="">
-            <div>Miz Fitness</div>
-
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo_1.jpg" alt="MizOnlineMeal">
         </div>
+        <br>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services-container">Services</a></li>
+            <li class="item"><a href="#client-section">Our Clients</a></li>
+            <li class="item"><a href="#contact">Contact us</a></li>
+        </ul>
+    </nav>
 
-    <!-- mid box for navbar -->
-        <div class="mid">
-            <ul class="navbar">
-                <li> <a href='#' class='active'> Home </a> </li>
-                <li> <a href='#'> About Us </a> </li>
-                <li> <a href='#'> Fitness Center </a> </li>
-                <li> <a href='#'> Contact Us </a> </li>
-            </ul>
+    <section id="home">
+        <h1 class="h-primary">Welcome to MizOnlineMeal</h1>
+        <p>
+            Lorem ipsum, dolor sit quide debitis at aspernatur, veniam vitae voluptas nisi fugit odit doloribus doloremque placeat dolor repellat? Inventore sit commodi amet possimus quaerat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic mollitia numquam ea assumenda ipsum aperiam?
+        </p>
+        <button class="btn">Order Now</button>
+    </section>
+    <br>
+    <section id="services-container">
+        <h1 id="h-primary">Our Services</h1>
+        <div id="services">
+            <div id="box1">
+                <img src="bg2_1.jpg" alt="">
+                <h2 class="h-secondary center">Food Odering</h2>
+                <p class="center">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus animi perferendis vero iure nesciunt obcaecati maiores porro ipsam alias expedita rem recusandae quos aliquid quae veniam, repellendus nisi eveniet iusto itaque? Iusto, assumenda.
+                </p>
+            </div>
+            <div id="box2">
+                <img src="bg2_3.jpg" alt="">
+                <h2 class="h-secondary center">Food Catering</h2>
+                <p class="center">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus animi perferendis vero iure nesciunt obcaecati maiores porro ipsam alias expedita rem recusandae quos aliquid quae veniam, repellendus nisi eveniet iusto itaque? Iusto, assumenda.
+                </p>
+            </div>
+            <div id="box3">
+                <img src="bg2_2.jpg" alt="">
+                <h2 class="h-secondary center">Bulk Ordering</h2>
+                <p class="center">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus animi perferendis vero iure nesciunt obcaecati maiores porro ipsam alias expedita rem recusandae quos aliquid quae veniam, repellendus nisi eveniet iusto itaque? Iusto, assumenda.
+                </p>
+            </div>
+        </div>    
+    </section>
+    <section id="client-section">
+        <h1 class="h-primary center">Our Clients</h1>
+        <div id="clients">
+            <div id="client-item">
+                <img id= 'img1' src="logo_2.jpg" alt="">
+            </div>
+            <div id="client-item">
+                <img id= 'img2' src="logo_3.jpg" alt="">
+            </div>
+            <div id="client-item">
+                <img id= 'img3' src="logo_4.jpg" alt="">
+            </div>
+            <div id="client-item">
+                <img id= 'img4' src="logo_5.jpg" alt="">
+            </div>
+            <div id="client-item">
+                <img id= 'img5' src="logo_6.jpg" alt="">
+            </div>
         </div>
-
-    <!--right box for buttons  -->
-        <div class="right">
-            <button class="btn">Call us now.</button>
-            <button class="btn">Email Us.</button>
-
+    </section>
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="name">Email: </label>
+                    <input type="Email" name="name" placeholder="Enter your Email">
+                </div>
+                <div class="form-group">
+                    <label for="name">Phone No.: </label>
+                    <input type="phone" name="name" placeholder="Enter your Phone No.">
+                </div>
+                <div class="form-group">
+                    <label for="name">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+            </form>
         </div>
-    </header>
-        
-    <div class="container">
-        <h1>Join the best gym in Mumbai now!!!!</h1>
-        <form action="noaction.php"></form>
-            <div class="form-group">
-            <input type="text" name='' placeholder='Enter your Name'>
-            </div>
-            <div class="form-group">
-            <input type="text" name='' placeholder='Enter your Age'>
-            </div>
-            <div class="form-group">
-            <input type="text" name='' placeholder='Enter your Gender'>
-            </div>
-            <div class="form-group">
-            <input type="text" name='' placeholder='Enter your Locality'>
-            </div>
-            <button class="btn">Submit</button>
-    </div>
+    </section>
+
+    <footer>
+        <div class="center">
+            Copyrigth &copy; www.MizonlineMeal.com. All rigths reserved.
+        </div>
+    </footer>
 </body>
 </html>
